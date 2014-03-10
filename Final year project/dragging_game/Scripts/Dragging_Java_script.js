@@ -190,12 +190,14 @@ function Check()
 		checkText.draw();
 		fail();
 	}
-
+ 
+	 
 }
 
 	layer.add(checkText);
 	layer.add(simpleText);
 	layer.add(answerBox);
-	layer.add(box);   
+	layer.add(box); 
+	
      stage.add(layer);
 

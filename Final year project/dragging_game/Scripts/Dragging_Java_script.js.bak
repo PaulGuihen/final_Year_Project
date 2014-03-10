@@ -19,21 +19,15 @@
     snd.play();
  }
 
-//function Background ()
-//{
-//	var image = new Image ("images/background.jpg");
-//}
 
 
- 
+
 
    
       var stage = new Kinetic.Stage({
         container: 'container',
         width: 1000,
         height: 400
-	  
-			
       });
       var layer = new Kinetic.Layer();
       var rectX = stage.getWidth() / 2 - 50;
@@ -164,7 +158,7 @@ function Start()
 
 	var message="please enter " + requiredNo + " boxes"; 
 
-	//context.fillText( message, 50, 50); 
+	//context.fillText( message, 50, 50);
 	simpleText.setText (message);
 	simpleText.draw();
 	start();
@@ -192,16 +186,18 @@ function Check()
 	else
 	{
 		//context.fillText( "fail  ", 155, 50);
-		checkText.setText ("O no try agin  ");
+		checkText.setText ("Oh no try again!!!  ");
 		checkText.draw();
 		fail();
 	}
 
+	 
 }
 
 	layer.add(checkText);
 	layer.add(simpleText);
 	layer.add(answerBox);
-	layer.add(box);   
+	layer.add(box); 
+	
      stage.add(layer);
 
